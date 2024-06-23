@@ -1,0 +1,5 @@
+    cmake_minimum_required(VERSION 3.20)
+    project(wS)
+    add_executable(gaba wS.cpp)
+    find_package(uwebsockets)
+    target_link_libraries(gaba uwebsockets::uwebsockets)
